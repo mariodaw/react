@@ -2,6 +2,7 @@
 import './App.css'
 import Home from './components/Home/Home';
 import Person from './components/Person/Person';
+import Counter from './components/Counter/Counter'
 
 function App() {
   const dishes = [
@@ -24,6 +25,7 @@ function App() {
       price:15
     }
   ]
+
   
 
   return (
@@ -36,6 +38,10 @@ function App() {
       plates = {dishes}
       />
         
+         {/* <Counter  initialValue={0} step={2}/> */}
+       <Counter 
+       initialValue={0}
+       />
     </div>
     
 
