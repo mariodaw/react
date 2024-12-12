@@ -1,17 +1,15 @@
 import { useState } from "react";
 // import React, { useEffect, useState } from "react";
-const Counter = ({initialValue}) => {
+const Counter = ({initialValue, step}) => {
    
   const [count, setCount] = useState(initialValue);
   const increment = () => {
-    setCount(count + 1)
+    setCount(count + step)
   };
   const decrement = () => {
-    setCount(count - 1)
+    setCount(count - step)
   };
-//   useEffect(() => {
-//     setCount(count+1)
-//   }, [increment])
+
   
   return (
     <div>

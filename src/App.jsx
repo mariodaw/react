@@ -41,6 +41,11 @@ function App() {
          {/* <Counter  initialValue={0} step={2}/> */}
        <Counter 
        initialValue={0}
+       step={2}
+       />
+       <Counter 
+       initialValue={3}
+       step={1}
        />
     </div>
     
